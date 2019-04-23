@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1547734184267.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4159000990",
+    "id" : "E2BE5B53",
+    "lastKnownWriteTime" : 1547740755,
+    "last_content_update" : 1547740755602,
+    "path" : "~/Coding projects/Toy problems/Heteroscedastic aleatoric uncertainty ANN/Keras mnist example test.R",
+    "project_path" : "Keras mnist example test.R",
+    "properties" : {
+        "cursorPosition" : "10,24",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548769089522.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3291078763",
+    "id" : "37D4753E",
+    "lastKnownWriteTime" : 1548764836,
+    "last_content_update" : 1548764836,
+    "path" : "~/Coding projects/Toy problems/Heteroscedastic aleatoric uncertainty ANN/mcycle head acceleration ANN.R",
+    "project_path" : "mcycle head acceleration ANN.R",
+    "properties" : {
+        "cursorPosition" : "41,39",
+        "scrollLine" : "15",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

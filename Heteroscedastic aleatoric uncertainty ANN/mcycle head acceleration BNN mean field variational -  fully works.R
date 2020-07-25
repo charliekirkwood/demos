@@ -59,7 +59,7 @@ posterior_mean_field <-
         make_distribution_fn = function(t) {
           tfd_independent(tfd_normal(
             loc = t[1:n],
-            scale = scale = 1e-5 + tf$nn$softplus(c + t[(n + 1):(2 * n)])
+            scale = 1e-5 + tf$nn$softplus(c + t[(n + 1):(2 * n)])
           ), reinterpreted_batch_ndims = 1)
         }
       )
@@ -96,7 +96,7 @@ model <- keras_model_sequential() %>%
   layer_dense(units = 2, activation = "linear") %>%
   layer_distribution_lambda(function(x)
     tfd_normal(loc = x[, 1, drop = FALSE],
-               scale = tf$math$softplus(x[, 2, drop = FALSE])
+               scale = 1e-3 + tf$math$softplus(0.01 * x[, 2, drop = FALSE])
     )
   )
 
@@ -108,7 +108,7 @@ model %>% compile(optimizer = optimizer_adam(lr = 0.01), loss = negloglik)
 history <- model %>% fit(
   x_train, y_train,
   batch_size = 64,
-  epochs = 200,
+  epochs = 100,
   verbose = 2,
   validation_data = list(x_test, y_test),
   callbacks = list(callback_early_stopping(monitor = "val_loss", patience = 500, verbose = 1))
